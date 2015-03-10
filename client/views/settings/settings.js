@@ -1,15 +1,18 @@
 /*****************************************************************************/
-/* MasterLayout: Event Handlers and Helpers */
+/* Settings: Event Handlers and Helpers */
 /*****************************************************************************/
-Template.MasterLayout.events({
-  'click [data-action="logout"]': function() {
-    Meteor.logout();
-  }
+Template.Settings.events({
+  /*
+   * Example: 
+   *  'click .selector': function (e, tmpl) {
+   *
+   *  }
+   */
 });
 
-Template.MasterLayout.helpers({
+Template.Settings.helpers({
   /*
-   * Example:
+   * Example: 
    *  items: function () {
    *    return Items.find();
    *  }
@@ -17,13 +20,13 @@ Template.MasterLayout.helpers({
 });
 
 /*****************************************************************************/
-/* MasterLayout: Lifecycle Hooks */
+/* Settings: Lifecycle Hooks */
 /*****************************************************************************/
-Template.MasterLayout.created = function () {
+Template.Settings.created = function () {
 };
 
-Template.MasterLayout.rendered = function () {
+Template.Settings.rendered = function () {
 };
 
-Template.MasterLayout.destroyed = function () {
+Template.Settings.destroyed = function () {
 };

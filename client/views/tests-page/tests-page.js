@@ -1,18 +1,18 @@
 /*****************************************************************************/
 /* Tests: Event Handlers and Helpers */
 /*****************************************************************************/
-Template.Tests.events({
+Template.TestsPage.events({
   /*
-   * Example: 
+   * Example:
    *  'click .selector': function (e, tmpl) {
    *
    *  }
    */
 });
 
-Template.Tests.helpers({
+Template.TestsPage.helpers({
   /*
-   * Example: 
+   * Example:
    *  items: function () {
    *    return Items.find();
    *  }
@@ -22,11 +22,11 @@ Template.Tests.helpers({
 /*****************************************************************************/
 /* Tests: Lifecycle Hooks */
 /*****************************************************************************/
-Template.Tests.created = function () {
+Template.TestsPage.created = function () {
 };
 
-Template.Tests.rendered = function () {
+Template.TestsPage.rendered = function () {
 };
 
-Template.Tests.destroyed = function () {
+Template.TestsPage.destroyed = function () {
 };

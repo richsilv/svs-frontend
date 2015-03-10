@@ -1,4 +1,4 @@
-TestsPageController = RouteController.extend({
+EnrollController = RouteController.extend({
   waitOn: function () {
   },
 

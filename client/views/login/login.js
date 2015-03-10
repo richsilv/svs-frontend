@@ -1,12 +1,10 @@
-Accounts.ui.config({
-  passwordSignupFields: 'USERNAME_ONLY'
-});
-
 AccountsTemplates.configure({
     enablePasswordChange: true,
-    forbidClientAccountCreation: false,
+    forbidClientAccountCreation: true,
     homeRoutePath: '/tests',
     redirectTimeout: 4000,
+    hideSignUpLink: true,
+    showForgotPasswordLink: true
 });
 
 /*****************************************************************************/

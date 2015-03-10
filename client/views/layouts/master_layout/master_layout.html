@@ -1,5 +1,32 @@
 <template name="MasterLayout">
-  <div class="ui doubling page centered vertically padded grid">
+  <div id="whole-page" class="ui doubling centered vertically padded page grid">
+    {{> topMenu}}
     {{> yield}}
   </div>
+</template>
+
+<template name="topMenu">
+
+  <div class="ui tabular menu">
+    <a class="{{isActiveRoute regex='home'}} left item" href={{pathFor route='home'}}>
+      Home
+    </a>
+    {{#if isInRole 'admin'}}
+    <a class="{{isActiveRoute regex='users'}} left item" href={{pathFor route='users'}}>
+      Users
+    </a>
+    {{/if}}
+    <a class="{{isActiveRoute regex='tests'}} left item" href={{pathFor route='tests-page'}}>
+      Tests
+    </a>
+    {{#if isInRole 'admin'}}
+    <a class="{{isActiveRoute regex='settings'}} left item" href={{pathFor route='settings'}}>
+      Settings
+    </a>
+    {{/if}}
+    <div class="right item">
+      <div class="ui primary button" data-action="logout">Log out</div>
+    </div>
+  </div>
+
 </template>

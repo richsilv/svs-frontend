@@ -1,0 +1,32 @@
+<template name="Users">
+  <div class="row">
+    <div class="ten wide centered column">
+      <div class="ui action left icon input">
+        <input type="email" placeholder="user@domain.com" data-field="email">
+        <i class="user icon"></i>
+        <button class="ui button" data-action="add-user">Add new user</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="twelve wide centered column">
+      {{> tabular table=TabularTables.Users class="ui center aligned striped table"}}
+    </div>
+  </div>
+</template>
+
+<template name="adminIcon">
+  <a data-action="flip-admin">
+    {{#if isAdmin}}
+      <i class="big {{isDisabled}} green checkmark icon"></i>
+    {{else}}
+      <i class="big {{isDisabled}} red close icon"></i>
+    {{/if}}
+  </a>
+</template>
+
+<template name="removeIcon">
+  <a data-action="remove-user">
+      <i class="big {{isDisabled}} trash icon"></i>
+  </a>
+</template>

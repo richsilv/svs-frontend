@@ -5,11 +5,17 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
 alanning:roles
 iron:router
 percolate:synced-cron
 nooitaf:semantic-ui
 useraccounts:semantic-ui
 accounts-password
+aldeed:tabular
+random
+zimme:iron-router-active
+fourseven:scss
+momentjs:moment
+chrismbeckett:toastr
+email
+richsilv:semantic-ui-modal

@@ -9,14 +9,31 @@ Router.configure({
   routeControllerNameConverter: 'upperCamelCase'
 });
 
+AccountsTemplates.configureRoute('enrollAccount', {
+    name: 'enroll',
+    path: '/enroll',
+    template: 'Enroll',
+    layoutTemplate: 'MasterLayout',
+    redirect: '/users'
+});
+
+AccountsTemplates.configureRoute('signIn', {
+    name: 'login',
+    path: '/login',
+    template: 'Login',
+    layoutTemplate: 'MasterLayout',
+    redirect: '/'
+});
+
 Router.map(function () {
   /*
     Example:
       this.route('home', {path: '/'});
   */
-  this.route('login', {path: '/login'});
-  this.route('tests', {path: '/tests'});
+  this.route('tests-page', {path: '/tests'});
   this.route('home', {path: '/'});
+  this.route('users', {path: '/users'});
+  this.route('settings', {path: '/settings'});
 });
 
 Router.plugin('ensureSignedIn');

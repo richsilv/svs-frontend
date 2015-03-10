@@ -1,4 +1,4 @@
-TestsPageController = RouteController.extend({
+SettingsController = RouteController.extend({
   waitOn: function () {
   },
 
